@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор</title>
+	<link rel="stylesheet" type="text/css" href="kalk.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="sc.js"></script>
+</head>
+<body>
+		<div id="background">
+			<div id="spase">
+				<div id="visor">
+					<div id="first" class="vis">first</div>
+					<div id="operation" class="vis">operation</div>
+					<div id="second" class="vis">second</div>
+					<div id="rezultat" class="vis">Rezultat</div>
+				</div>
+				<div id="numbers">
+					<div  class="numbers">
+						<button value="1" class="myclass">1</button>
+					</div>
+					<div  class="numbers">
+						<button onclick="input2()" class="mumber"><p id='two'>2</p></button>
+					</div>
+					<div class="numbers">
+						<button onclick="input()" ><p id="thre">3</p></button>
+					</div>
+					<div class="numbers right_kolom">
+						<button onclick="umnog()">*</button>
+					</div>
+					<div class="numbers">
+						<button onclick="input()"><p id="four">4</p></button>
+					</div>
+					<div class="numbers">
+						<button onclick="input()"><p id="five">5</p></button>
+					</div>
+					<div class="numbers">
+						<button onclick="input()"><p id="six">6</p></button>
+					</div>
+					<div class="numbers right_kolom">
+						<button onclick="delit()">/</button>
+					</div>
+					<div class="numbers">
+						<button onclick="input()"><p id="seven">7</p></button>
+					</div>
+					<div class="numbers">
+						<button onclick="input()"><p id="eight">8</p></button>
+					</div>
+					<div class="numbers">
+						<button onclick="input()"><p id="nine">9</p></button>
+					</div>
+					<div class="numbers right_kolom">
+						<button onclick="plus()">+</button>
+					</div>
+				</div>
+				<div id="bottom">
+					<div class="numbers">
+						<button onclick="ravno()">=</button>
+					</div>
+					<div class="numbers">
+						<button onclick="input()"><p id="zero">9</p></button>
+					</div>
+					
+					<div class="numbers right_kolom">
+						<button onclick="minus()">-</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	<script type="text/javascript" src="sc.js"></script>
+</body>
+</html>
