@@ -1,76 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Калькулятор</title>
-	<link rel="stylesheet" type="text/css" href="kalk.css">
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="sc.js"></script>
-</head>
-<body>
-		<div id="background">
-			<div id="spase">
-				<div id="visor">
-					<div id="first" class="vis">first</div>
-					<div id="operation" class="vis">operation</div>
-					<div id="second" class="vis">second</div>
-					<div id="rezultat" class="vis">Rezultat</div>
-				</div>
-				<div id="numbers">
-					<div  class="numbers">
-						<button value="1" class="myclass">1</button>
-					</div>
-					<div  class="numbers">
-						<button onclick="input2()" class="mumber"><p id='two'>2</p></button>
-					</div>
-					<div class="numbers">
-						<button onclick="input()" ><p id="thre">3</p></button>
-					</div>
-					<div class="numbers right_kolom">
-						<button onclick="umnog()">*</button>
-					</div>
-					<div class="numbers">
-						<button onclick="input()"><p id="four">4</p></button>
-					</div>
-					<div class="numbers">
-						<button onclick="input()"><p id="five">5</p></button>
-					</div>
-					<div class="numbers">
-						<button onclick="input()"><p id="six">6</p></button>
-					</div>
-					<div class="numbers right_kolom">
-						<button onclick="delit()">/</button>
-					</div>
-					<div class="numbers">
-						<button onclick="input()"><p id="seven">7</p></button>
-					</div>
-					<div class="numbers">
-						<button onclick="input()"><p id="eight">8</p></button>
-					</div>
-					<div class="numbers">
-						<button onclick="input()"><p id="nine">9</p></button>
-					</div>
-					<div class="numbers right_kolom">
-						<button onclick="plus()">+</button>
-					</div>
-				</div>
-				<div id="bottom">
-					<div class="numbers">
-						<button onclick="ravno()">=</button>
-					</div>
-					<div class="numbers">
-						<button onclick="input()"><p id="zero">9</p></button>
-					</div>
-					
-					<div class="numbers right_kolom">
-						<button onclick="minus()">-</button>
-					</div>
-				</div>
-			</div>
-			
-		</div>
+<html lang="en">
 
-	<script type="text/javascript" src="sc.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="kalk.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="calculator__wrapper">
+            <div id="rezult" class="calculator__text-exemple"></div>
+
+            <div class=calculator__buttons>
+                <input id="reset" type="text" value="ОТЧИСТИТЬ" readonly>
+                <input id="one" type="text" value="1" readonly>
+                <input id="two" type="text" value="2" readonly>
+                <input id="three" type="text" value="3" readonly>
+                <input id="multiply" type="text" value="*" readonly>
+                <input id="four" type="text" value="4" readonly>
+                <input id="five" type="text" value="5" readonly>
+                <input id="six" type="text" value="6" readonly>
+                <input id="share" type="text" value="/" readonly>
+                <input id="seven" type="text" value="7" readonly>
+                <input id="eight" type="text" value="8" readonly>
+                <input id="nine" type="text" value="9" readonly>
+                <input id="plus" type="text" value="+" readonly>
+                <input id="zero" type="text" value="0" readonly>
+                <input id="dot" type="text" value="." readonly>
+                <input id="final-num" class="special" type="text" value="=" readonly>
+                <input id="minus" type="text" value="-" readonly>
+            </div>
+        </form>
+    </div>
+
+    <script src="sc.js"></script>
 </body>
+
 </html>
